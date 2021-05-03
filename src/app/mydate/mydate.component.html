@@ -1,0 +1,18 @@
+
+<p>isClicked value = {{isClicked}}</p>
+<button (click)="toggle()">Toggle</button>
+<div *ngIf="isClicked">
+  <p> This is the date component ui card started</p>
+  <p>String Value : {{message}}</p>
+  <p>DateString Value : {{dateString}}</p>
+  <p>{{100+1}}</p>
+  <p>{{sumT(1, 2)}}</p>
+  <p>Address: {{address.name}}, {{address.city}}</p>
+
+  Mobile:
+  <div *ngIf="address.mobile.length > 1">
+    <span *ngFor="let mobileNo of address.mobile">{{mobileNo}}, </span>
+  </div>
+  <p> This is the date component ui card completed</p>
+</div>
+
